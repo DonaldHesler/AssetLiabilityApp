@@ -7,7 +7,7 @@ async function setupDBConnection(){
         host: process.env.DB_HOST,
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
-        database: "ALAPP"
+        database: process.env.DB_DATABASE
     });
 
     if (connection.state === 'disconected'){
