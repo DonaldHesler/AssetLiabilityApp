@@ -1,0 +1,18 @@
+{
+  "name": "assetliabilityapp",
+  "version": "1.0.0",
+  "description": "Asset Liability App",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "webpack"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "promise-mysql": "^4.1.3"
+  }
+}

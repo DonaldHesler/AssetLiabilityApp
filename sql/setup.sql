@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS ALAPP;
+CREATE DATABASE ALAPP;
+
+USE ALAPP;
+
+DROP TABLE IF EXISTS balance_sheet;
+
+CREATE TABLE balance_sheet (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(64) NOT NULL,
+    balance decimal(24,2) NOT NULL,
+    type ENUM('Asset', 'Liability')
+)
