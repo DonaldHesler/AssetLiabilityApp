@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 require('dotenv').config()
 
 const PORT = process.env.PORT || 8000;
@@ -10,7 +9,7 @@ app.use(express.json());
 
 // Serve built front end
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("frontend/build"));
+    app.use(express.static("frontend/dist"));
 }
 
 // Setup API and Web Routes

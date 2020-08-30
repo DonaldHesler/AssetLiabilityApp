@@ -4,7 +4,8 @@
   "description": "Asset Liability App",
   "scripts": {
     "start": "node backend/server.js",
-    "build": "webpack"
+    "build": "cd frontend && npm install && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "engines": {
     "node": "14.x"

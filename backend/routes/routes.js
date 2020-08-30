@@ -1,4 +1,5 @@
 const db = require("../db/connectors");
+const path = require("path");
 
 module.exports = function(app) {
     //API route to get all records
@@ -43,6 +44,6 @@ module.exports = function(app) {
 
     //Send all other get routes to the frontend 
     app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
+        res.sendFile(path.join(__dirname, "./frontend/dist/index.html"));
     });
 };
