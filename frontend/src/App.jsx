@@ -18,7 +18,7 @@ function App() {
         setData({netWorth: result.netWorth, assetTotal: result.assetTotal, liabilityTotal: result.liabilityTotal, records: result.records})
       })
     })
-  })
+  },[])
 
   let onAdd = (name, balance, type) => {
     fetch("balance_sheet", {
