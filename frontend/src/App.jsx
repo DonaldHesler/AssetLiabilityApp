@@ -3,10 +3,6 @@ import Form from './components/Form';
 import Table from './components/Table';
 import Total from './components/Total';
 
-const style = {
-
-}
-
 function App() {
   const [data, setData] = useState({netWorth: 0, assetTotal: 0, liabilityTotal: 0, records: []});
 
@@ -47,8 +43,9 @@ function App() {
       })
     });
   };
+
   return (
-    <div className="App">
+    <div>
       <Form onAdd={onAdd}/>
       <Total data={data}></Total>
       <Table data={data.records} onDelete={onDelete}/>

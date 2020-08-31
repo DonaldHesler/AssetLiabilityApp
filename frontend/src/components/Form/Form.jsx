@@ -28,6 +28,7 @@ export default function Form(props) {
       parseFloat(valueRef.current.value),
       type
     );
+    //Reset Form
     nameRef.current.value = "";
     valueRef.current.value = "";
     setType("Asset");
